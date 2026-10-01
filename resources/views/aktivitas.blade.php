@@ -20,7 +20,7 @@
     </ul>
 
 <h2>Sertifikat</h2>
-    <p>Berikut adalah sertifikat yang pernah saya miliki:</p>
+    <p>Berikut adalah sertifikat yang saya miliki:</p>
 
     <ul>
         <li><b>Dicoding Indonesia</b> : <a href="https://www.dicoding.com/certificates/1RXYWWR31ZVM">Prompt Engineering untuk Software Developer</a></li>
