@@ -2,38 +2,48 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontak - My Personal Website</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
+    <div class="container">
 
-    @include('layouts.header')
+        @include('layouts.header')
 
-    <h2>Kontak</h2>
-    <p>Silakan hubungi saya melalui informasi berikut:</p>
+        <h2>Kontak</h2>
+        <p>Silakan hubungi saya melalui informasi berikut:</p>
 
-    <ul>
-        <li><b>Email</b> : tegar@unsiq.ac.id</li>
-        <li><b>No. HP</b> : 08123456789</li>
-        <li><b>Instagram</b> : <a href="https://www.instagram.com/gartriwi_/">gartriwi_</a></li>
-        <li><b>LinkedIn</b> : <a href="https://www.linkedin.com/in/tegar-tri-a53555353">Tegar Tri</a></li>
-    </ul>
+        <ul class="kontak-info">
+            <li><b>Email</b> : tegar@unsiq.ac.id</li>
+            <li><b>No. HP</b> : 08123456789</li>
+            <li><b>Instagram</b> : <a href="https://www.instagram.com/gartriwi_/" target="_blank">gartriwi_</a></li>
+            <li><b>LinkedIn</b> : <a href="https://www.linkedin.com/in/tegar-tri-a53555353" target="_blank">Tegar Tri</a></li>
+        </ul>
 
-    <br>
-    <h3>Kirim Pesan</h3>
-    <form method="POST" action="#">
-        <label>Nama:</label><br>
-        <input type="text" name="nama" placeholder="Nama Anda"><br><br>
+        <h3>Kirim Pesan</h3>
+        <form method="POST" action="#">
+            @csrf
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama Anda">
+            </div>
 
-        <label>Email:</label><br>
-        <input type="email" name="email" placeholder="Email Anda"><br><br>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email Anda">
+            </div>
 
-        <label>Pesan:</label><br>
-        <textarea name="pesan" rows="4" cols="40" placeholder="Tulis pesan Anda..."></textarea><br><br>
+            <div class="form-group">
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda..."></textarea>
+            </div>
 
-        <input type="submit" value="Kirim Pesan">
-    </form>
+            <input type="submit" value="Kirim Pesan" class="btn-submit">
+        </form>
 
-    @include('layouts.footer')
+        @include('layouts.footer')
 
+    </div>
 </body>
 </html>

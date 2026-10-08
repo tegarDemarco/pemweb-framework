@@ -1,10 +1,12 @@
-<h1 align="center">My Personal Website</h1>
+<header>
+    <h1>Web Portofolio</h1>
 
-<nav>
-    <a href="{{ route('beranda') }}">Beranda</a> &nbsp; |
-    <a href="{{ route('datadiri') }}">Data Diri</a> &nbsp; |
-    <a href="{{ route('aktivitas') }}">Aktivitas</a> &nbsp; |
-    <a href="{{ route('kontak') }}">Kontak</a>
-</nav>
+    <nav>
+        <a href="{{ route('beranda') }}">Beranda</a>
+        <a href="{{ route('datadiri') }}">Data Diri</a>
+        <a href="{{ route('aktivitas') }}">Aktivitas</a>
+        <a href="{{ route('kontak') }}">Kontak</a>
+    </nav>
+</header>
 
-<hr>
+<hr class="divider">
